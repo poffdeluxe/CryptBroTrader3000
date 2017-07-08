@@ -1,7 +1,7 @@
 // Load up our config
 require('dotenv').config()
 
-const gdax = require('./gdax');
+const gdax = require('./gdaxLib');
 
 /**
  * Responds to any HTTP request that can provide a "message" field in the body.
