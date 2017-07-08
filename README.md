@@ -46,4 +46,4 @@ If you don't give a command after two seconds, the call will end. GOTTA BE FAST,
 ## TODO
 * Tests
 * Specify amounts during trades (Ex: BUY 100!)
-* Finish up text messaging and refactor
+* Finish up text messaging and refactor (Currently located on `messaging` branch)

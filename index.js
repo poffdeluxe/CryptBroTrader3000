@@ -28,9 +28,7 @@ exports.hello = function helloWorld (req, res) {
  *
  */
 exports.command = function command(req, res) {
-  console.log(JSON.stringify(req.body));
-
-  var twiml = new twilio.twiml.VoiceResponse();
+  const twiml = new twilio.twiml.VoiceResponse();
 
   // Only listen for commands from owner's phone number
   if(req.body['From'] !== process.env.OWNER_PHONE) {
