@@ -24,8 +24,6 @@ exports.sell = () => {
     'funds': TRADE_USD_COST
   };
 
-  // For sell, we might need to currency convert
-
   return new Promise((resolve, reject) => {
     client.sell(params, (err, response, data) => {
       if(err) {

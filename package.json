@@ -3,7 +3,8 @@
   "description": "Trading crypto assets the old-fashioned way, bro!",
   "dependencies": {
     "dotenv": "^4.0.0",
-    "gdax": "https://github.com/poffdeluxe/gdax-node.git"
+    "gdax": "https://github.com/poffdeluxe/gdax-node.git",
+    "twilio": "^3.4.0"
   },
   "private": true
 }
