@@ -64,12 +64,3 @@ exports.command = function command(req, res) {
 
   res.status(200).type('text/xml').end(twiml.toString());
 };
-
-/*
-Deploy with:
-gcloud beta functions deploy hello --entry-point helloWorld --stage-bucket cbt3000 --trigger-http
-
-call with:
-
-curl -X POST https://us-central1-cryptbrotrader3000.cloudfunctions.net/hello -H "Content-Type:application/json" --data '{"message":"Keyboard Cat"}'
-*/
