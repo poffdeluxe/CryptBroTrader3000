@@ -64,3 +64,35 @@ exports.command = function command(req, res) {
 
   res.status(200).type('text/xml').end(twiml.toString());
 };
+
+
+exports.msg = function commandMsg(req, res) {
+  const twiml = new twilio.twiml.MessagingResponse();
+
+  // Only listen for commands from owner's phone number
+  if(req.body['From'] !== process.env.OWNER_PHONE) {
+      twiml.message('GTFO Meatbag!');
+      res.status(200).type('text/xml').end(twiml.toString());
+
+      return;
+  }
+
+  const wordsSaid = req.body['Body'].toLowerCase();
+
+  let resultMsg = 'Invalid command.'
+  if(wordsSaid.indexOf('buy') !== -1 || wordsSaid.indexOf('bye') !== -1) {
+    // We're buying
+    resultMsg = 'Buying.';
+
+    gdaxLib.buy();
+  } else if (wordsSaid.indexOf('sell') !== -1) {
+    // We're selling
+    resultMsg = 'Selling.';
+
+    gdaxLib.sell();
+  }
+
+  twiml.message(resultMsg);
+
+  res.status(200).type('text/xml').end(twiml.toString());
+};
