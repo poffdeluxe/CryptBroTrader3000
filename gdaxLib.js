@@ -43,9 +43,8 @@ exports.buy = () => {
     'product_id': TRADE_PRODUCT_ID,
     'funds': TRADE_USD_COST
   };
-  debugger;
+
   return new Promise((resolve, reject) => {
-    debugger;
     client.buy(params, (err, response, data) => {
       if(err) {
         reject(err);
