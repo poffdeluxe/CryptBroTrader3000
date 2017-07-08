@@ -42,3 +42,8 @@ You can say any phrase you want as long as they include a command word:
 * `wait` or `hold` - will wait three seconds before next prompt
 
 If you don't give a command after two seconds, the call will end. GOTTA BE FAST, BRO
+
+## TODO
+* Tests
+* Specify amounts during trades (Ex: BUY 100!)
+* Finish up text messaging and refactor
