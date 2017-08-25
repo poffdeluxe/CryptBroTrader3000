@@ -1,7 +1,7 @@
 # CryptBroTrader3000
 ![Bro trading Ethereum](http://i.imgur.com/0wDRpCG.jpg)
 
-Trading crypto assets the old-fashioned way, bro! By yelling over the phone at some rando at the exchange!
+Trading crypto assets the old-fashioned way, bro! (aka by yelling over the phone at some rando)
 
 ## Requirements
 Before getting started, you need the following setup:
@@ -44,7 +44,7 @@ You can say any phrase you want as long as they include a command word:
 If you don't give a command after two seconds, the call will end. GOTTA BE FAST, BRO
 
 ## Demo
-Call +1 (909) 787-BRO8 to try it out. Note: No real ETH or BTC is being traded on this number. It's just to try out the interface.
+Call +1 (909) 787-BRO8 to try it out. Note: No real ETH or BTC is being traded on this number (and I disabled the phone number security check). It's just to try out the interface.
 
 At the prompt, tell it to "BUY BUY BUY" or "Sell right now!"
 
