@@ -3,6 +3,20 @@
 
 Trading crypto assets the old-fashioned way, bro! (aka by yelling over the phone at some rando)
 
+## Demo
+Call +1 (909) 787-BRO8 to try it out. Note: No real ETH or BTC is being traded on this number (and I disabled the phone number security check). It's just to try out the interface.
+
+At the prompt, tell it to "BUY BUY BUY" or "Sell right now!"
+
+## Commands
+You can say any phrase you want as long as they include a command word:
+
+* `BUY` - will buy crypto
+* `SELL` - will sell crypto
+* `wait` or `hold` - will wait three seconds before next prompt
+
+If you don't give a command after two seconds, the call will end. GOTTA BE FAST, BRO
+
 ## Requirements
 Before getting started, you need the following setup:
   * [Google Cloud Functions](https://cloud.google.com/functions/)
@@ -33,20 +47,6 @@ Then, when both functions are done deploying, paste the URL for the "hello" func
 ![Twilio configure](http://i.imgur.com/5W3v8ok.png)
 
 **You're good to go!**
-
-## Commands
-You can say any phrase you want as long as they include a command word:
-
-* `BUY` - will buy crypto
-* `SELL` - will sell crypto
-* `wait` or `hold` - will wait three seconds before next prompt
-
-If you don't give a command after two seconds, the call will end. GOTTA BE FAST, BRO
-
-## Demo
-Call +1 (909) 787-BRO8 to try it out. Note: No real ETH or BTC is being traded on this number (and I disabled the phone number security check). It's just to try out the interface.
-
-At the prompt, tell it to "BUY BUY BUY" or "Sell right now!"
 
 ## TODO
 * Tests
